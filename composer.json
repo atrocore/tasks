@@ -1,0 +1,26 @@
+{
+  "name": "atrocore/activities-tasks",
+  "description": "ActivitiesTasks module",
+  "require": {
+    "atrocore/core": "~1.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ActivitiesTasks\\": "app/"
+    }
+  },
+  "extra": {
+    "treoId": "ActivitiesTasks",
+    "name": {
+      "default": "Activities and Tasks"
+    },
+    "description": {
+      "default": "The module enables planning and fulfillment of activities (meetings, calls, e-mails) and tasks for any entity in the system."
+    },
+    "tags": [
+      "manage",
+      "planning",
+      "usability"
+    ]
+  }
+}

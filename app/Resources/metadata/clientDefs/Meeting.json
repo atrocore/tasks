@@ -1,0 +1,103 @@
+{
+  "controller": "controllers/record",
+  "acl": "activitiestasks:acl/meeting",
+  "views": {
+    "detail": "activitiestasks:views/meeting/detail"
+  },
+  "recordViews": {
+    "list": "activitiestasks:views/meeting/record/list",
+    "detail": "activitiestasks:views/meeting/record/detail"
+  },
+  "sidePanels": {
+    "detail": [
+      {
+        "name": "attendees",
+        "label": "Attendees",
+        "view": "activitiestasks:views/meeting/record/panels/attendees",
+        "options": {
+          "fieldList": [
+            "users",
+            "contactsStatus",
+            "leadsStatus"
+          ]
+        },
+        "isForm": true,
+        "notRefreshable": true
+      }
+    ],
+    "detailSmall": [
+      {
+        "name": "attendees",
+        "label": "Attendees",
+        "view": "activitiestasks:views/meeting/record/panels/attendees",
+        "isForm": true,
+        "notRefreshable": true
+      }
+    ],
+    "edit": [
+      {
+        "name": "attendees",
+        "label": "Attendees",
+        "view": "activitiestasks:views/meeting/record/panels/attendees",
+        "isForm": true,
+        "notRefreshable": true
+      }
+    ],
+    "editSmall": [
+      {
+        "name": "attendees",
+        "label": "Attendees",
+        "view": "activitiestasks:views/meeting/record/panels/attendees",
+        "isForm": true,
+        "notRefreshable": true
+      }
+    ]
+  },
+  "filterList": [
+    {
+      "name": "planned"
+    },
+    {
+      "name": "held",
+      "style": "success"
+    },
+    {
+      "name": "todays"
+    }
+  ],
+  "boolFilterList": [
+    "onlyMy"
+  ],
+  "activityDefs": {
+    "link": "meetings",
+    "activitiesCreate": true,
+    "historyCreate": true
+  },
+  "dynamicLogic": {
+    "fields": {
+      "reminders": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "and",
+              "value": [
+                {
+                  "type": "notEquals",
+                  "attribute": "status",
+                  "value": "Held"
+                },
+                {
+                  "type": "notEquals",
+                  "attribute": "status",
+                  "value": "Not Held"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "iconClass": "fas fa-briefcase",
+  "viewSendInvitations" : false
+}

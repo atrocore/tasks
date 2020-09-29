@@ -1,0 +1,21 @@
+{
+  "entity": true,
+  "layouts": true,
+  "tab": true,
+  "acl": true,
+  "aclPortal": "recordAllAccountContactOwnNo",
+  "module": "ActivitiesTasks",
+  "customizable": true,
+  "importable": true,
+  "activity": true,
+  "object": true,
+  "activityStatusList": [
+    "Planned"
+  ],
+  "historyStatusList": [
+    "Held",
+    "Not Held"
+  ],
+  "statusField": "status",
+  "hasAssignedUser": true
+}

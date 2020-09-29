@@ -1,0 +1,10 @@
+{
+    "hasActivities": {
+        "type": "bool",
+        "default": false
+    },
+    "hasTasks": {
+        "type": "bool",
+        "default": false
+    }
+}

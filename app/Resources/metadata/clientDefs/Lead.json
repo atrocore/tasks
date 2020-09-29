@@ -1,0 +1,80 @@
+{
+  "controller": "controllers/record",
+  "recordViews": {
+    "detail": "activitiestasks:views/lead/record/detail"
+  },
+  "filterList": [
+    {
+      "name": "actual"
+    }
+  ],
+  "boolFilterList": [
+    "onlyMy"
+  ],
+  "dynamicLogic": {
+    "fields": {
+      "name": {
+        "required": {
+          "conditionGroup": [
+            {
+              "type": "isEmpty",
+              "attribute": "accountName"
+            },
+            {
+              "type": "isEmpty",
+              "attribute": "emailAddress"
+            },
+            {
+              "type": "isEmpty",
+              "attribute": "phoneNumber"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sidePanels": {
+    "detail": [
+      {
+        "name": "activities",
+        "label": "Activities",
+        "view": "activitiestasks:views/record/panels/activities",
+        "aclScope": "Activities"
+      },
+      {
+        "name": "history",
+        "label": "History",
+        "view": "activitiestasks:views/record/panels/history",
+        "aclScope": "Activities"
+      },
+      {
+        "name": "tasks",
+        "label": "Tasks",
+        "view": "activitiestasks:views/record/panels/tasks",
+        "aclScope": "Task"
+      }
+    ],
+    "detailSmall": [
+      {
+        "name": "activities",
+        "label": "Activities",
+        "view": "activitiestasks:views/record/panels/activities",
+        "aclScope": "Activities"
+      },
+      {
+        "name": "history",
+        "label": "History",
+        "view": "activitiestasks:views/record/panels/history",
+        "aclScope": "Activities"
+      },
+      {
+        "name": "tasks",
+        "label": "Tasks",
+        "view": "activitiestasks:views/record/panels/tasks",
+        "aclScope": "Task"
+      }
+    ]
+  },
+  "color": "#d6a2c9",
+  "iconClass": "fas fa-address-card"
+}

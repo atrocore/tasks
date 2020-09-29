@@ -1,0 +1,11 @@
+[
+  {
+    "label": "Activities",
+    "rows": [
+      [
+        {"name": "activitiesEntityList"},
+        {"name": "historyEntityList"}
+      ]
+    ]
+  }
+]

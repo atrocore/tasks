@@ -1,0 +1,32 @@
+{
+    "entity": true,
+    "layouts": true,
+    "tab": true,
+    "acl": true,
+  "aclPortal": true,
+  "aclPortalLevelList": [
+    "all",
+    "account",
+    "contact",
+    "own",
+    "no"
+  ],
+  "activityStatusList": [
+    "Not Started",
+    "Started"
+  ],
+  "historyStatusList": [
+    "Completed"
+  ],
+  "module": "ActivitiesTasks",
+  "customizable": true,
+  "importable": true,
+  "notifications": true,
+  "object": true,
+  "statusField": "status",
+  "kanbanStatusIgnoreList": [
+    "Canceled",
+    "Deferred"
+  ],
+  "hasAssignedUser": true
+}

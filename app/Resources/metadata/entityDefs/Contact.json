@@ -1,0 +1,55 @@
+{
+    "fields": {
+        "acceptanceStatusMeetings": {
+            "type": "enum",
+            "notStorable": true,
+            "layoutListDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "exportDisabled": true,
+            "view": "activitiestasks:views/lead/fields/acceptance-status",
+            "link": "meetings",
+            "column": "status"
+        },
+        "acceptanceStatusCalls": {
+            "type": "enum",
+            "notStorable": true,
+            "layoutListDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "exportDisabled": true,
+            "view": "activitiestasks:views/lead/fields/acceptance-status",
+            "link": "calls",
+            "column": "status"
+        }
+    },
+    "links": {
+        "meetings": {
+            "type": "hasMany",
+            "entity": "Meeting",
+            "foreign": "contacts",
+            "layoutRelationshipsDisabled": true,
+            "audited": true
+        },
+        "calls": {
+            "type": "hasMany",
+            "entity": "Call",
+            "foreign": "contacts",
+            "layoutRelationshipsDisabled": true,
+            "audited": true
+        },
+        "tasks": {
+            "type": "hasChildren",
+            "entity": "Task",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "audited": true
+        },
+        "tasksPrimary": {
+            "type": "hasMany",
+            "entity": "Task",
+            "foreign": "contact",
+            "layoutRelationshipsDisabled": true
+        }
+    }
+}
