@@ -5,7 +5,7 @@ Dafür erstellt das Modul alle notwendigen Verknüpfungen zwischen den beteiligt
 ## Installationsanleitung
 
 - Um das Modul zu installieren, öffnen Sie in der Administration den Modulmanager und führen Sie die Installation durch.
-  ![Install Activites Module](/files/products/treo-activities/install-activites-module.jpg)
+  ![Install Activites Module](_assets/install-activites-module.jpg)
 - Um das Modul zu deaktivieren, deaktivieren Sie die Checkbox "Is active".
 - Um das Modul zu deinstallieren, wählen Sie die Option "Remove" aus dem Aktionsmenü des Moduls.
 
@@ -18,7 +18,7 @@ Dafür erstellt das Modul alle notwendigen Verknüpfungen zwischen den beteiligt
 
 2. Bei den Einstellungen setzen Sie die Checkbox bei den "Aktivitäten", wenn Sie die Blöcke für Verwaltung der Anrufe, Besprechungen und E-Mails aktivieren  möchten. Setzen Sie die Checkbox bei den Aufgaben, um die Verwaltung der mit der jeweiligen Entität verbundenen Aufgaben zu ermöglichen. 
 
-  ![Edit Entity Activities Active](/files/products/treo-activities/edit-entity-activities-active.jpg)
+  ![Edit Entity Activities Active](_assets/edit-entity-activities-active.jpg)
 
 #### Konfiguration der Zugriffsrechte für Benutzer
 
@@ -33,49 +33,49 @@ Damit die Benutzer Aktivitäten und Aufgaben nutzen können, konfigurieren Sie b
 
 Nach der Aktivierung von Aktivitäten und Aufgaben erscheinen im rechten Seitenpanel folgende Blöcke: 
 
-![Activities Panel All](/files/products/treo-activities/activities-panel-all.jpg)
+![Activities Panel All](_assets/activities-panel-all.jpg)
 
 ### Das Seitenpanel für Aktivitäten
 
 - Auf dem Seitenpanel für Aktivitäten kann man die Einträge für alle Arten von Aktivitäten oder gefiltert nach Besprechungen oder Anrufen sehen, indem Sie auf den entsprechenden Button klicken. Standardmäßig werden alle Aktivitäten angezeigt. 
 
-  ![History Panel](/files/products/treo-activities/history-panel.jpg)
+  ![History Panel](_assets/history-panel.jpg)
   
 - Um eine neue Aktivität zu erstellen, klicken Sie auf den Select-Icon im Aktionsmenü in der oberen rechten Ecke des Panels und wählen Sie die entsprechende Aktion aus. 
 
-  ![new activity](/files/products/treo-activities/new-activity.png)
+  ![new activity](_assets/new-activity.png)
   
 - Um eine neue E-Mail zu erstellen und zu senden, wählen Sie aus dem Aktionsmenü den Punkt `Compose Email`.
-  ![compose_email](/files/products/treo-activities/compose-email.png)
+  ![compose_email](_assets/compose-email.png)
 - Um einen neuen Anruf zu erstellen, wählen Sie `Schedule Call`.
-  ![create_call](/files/products/treo-activities/create-call.png)
+  ![create_call](_assets/create-call.png)
 - Um eine neue Besprechung zu erstellen, wählen Sie `Schedule Meeting`.
-  ![create_meeting](/files/products/treo-activities/create-meeting.png)
+  ![create_meeting](_assets/create-meeting.png)
 - Um detaillierte Informationen zu einer bestimmten Entität anzuzeigen, klicken Sie auf den Namen dieser Aktivität. 
 - Um einen Eintrag schnell in einem Pop-up anzuzeigen, klicken Sie auf "View" im Aktionsmenü für den einzelnen Eintrag.
 - Um einen Eintrag in einem Pop-up schnell zu bearbeiten, klicken Sie auf "Edit" im Aktionsmenü für den einzelnen Eintrag.
 - Um einen Eintrag zu löschen, klicken Sie auf "Remove" im Aktionsmenü dieses Eintrags.
 - Es besteht die Möglichkeit, eine bestimmte Aktivität (Anruf oder Besprechung) als stattgefunden oder nicht stattgefunden zu markieren, dazu müssen Sie die entsprechende Option aus dem Aktionsmenü wählen. 
-  ![Set Held](/files/products/treo-activities/set-held.png)
+  ![Set Held](_assets/set-held.png)
 
 ### Seitenpanel für Historie
 
 - Auf dem Seitenpanel für Historie wird der Verlauf aller Aktivitäten (Standardeinstellung) angezeigt. 
 - Um die Historie nach einem bestimmten Aktivitätstyp zu filtern, klicken Sie auf den Button Meetings, Calls oder E-Mails entsprechend. 
 - Um Informationen zu einem Anruf, einer Besprechung oder eine schon versendete E-Mail zu speichern, klicken Sie auf den Select-Icon oben rechts und wählen Sie die entsprechende Option. 
-  ![log_history](/files/products/treo-activities/log-history.png)
+  ![log_history](_assets/log-history.png)
 - Um detaillierte Informationen zu einer bestimmten Aktivität anzuzeigen, klicken Sie auf den Namen dieser Aktivität.
 - Für jeden Aktivitäten-Eintrag aus der Historie sind folgende Aktionen vorhanden: Schnelle Ansicht des Eintrags, schnelle Bearbeitung des Eintrags und Löschen des Eintrags. 
 
-![history_single_actions](/files/products/treo-activities/history-single-actions.png)
+![history_single_actions](_assets/history-single-actions.png)
 
 ### Seitenpanel für Aufgaben
 
 - Auf dem Seitenpanel für Aufgaben werden die aktuellen und abgeschlossenen Aufgaben aufgelistet, mit der Angabe der Aufgabenbezeichnung, Status, verantwortlichen Mitarbeiters und des Fälligkeitsdatums.
 
-  ![task_list](/files/products/treo-activities/task-list.png)
+  ![task_list](_assets/task-list.png)
 
 - Im Aktionsmenü für jeden einzelnen Eintrag sind folgende Optionen möglich: Aufgabenansicht, Aufgabenbearbeitung, Aufgabe als erledigt markieren, Aufgabe löschen. 
 
 - Um schnell einen neuen Aufgabeneintrag zu erstellen, klicken Sie auf das "+" Icon in der oberen rechten Ecke. 
-  ![Task Panel](/files/products/treo-activities/task-panel.jpg)
+  ![Task Panel](_assets/task-panel.jpg)
