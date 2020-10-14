@@ -1,0 +1,152 @@
+# EULA - End-User License Agreement of AtroCore (haftungsbeschränkt)
+
+Valid from: 09.10.2020
+
+if you do not agree to the terms and conditions of this Agreement, you should not download, install and use the Software.
+
+## License Summary
+
+- License does not expire
+- Software can be used in one (1) project, software instance or application
+- Commercial use allowed
+- Licensee can modify source-code, if provided
+- Free and paid support can be provided
+
+## 1. Preamble
+1.1. The Scope of this Agreement (hereinafter: Agreement) applies to all proprietary standard software (hereinafter: the Software) provided by AtroCore UG (haftungsbeschränkt) to the Licensee in return for payment.
+
+1.2. This Agreement governs the relationship between Licensee, which is a legal entity (hereinafter: Licensee) and AtroCore UG (haftungsbeschränkt, hereinafter: Licensor). 
+
+1.3. This Agreement sets the terms, rights, restrictions and obligations on using the Software created and owned by Licensor.
+
+1.4. Licensor is not obliged to deliver the Software as source code. The source code will only be delivered if it has been agreed in written or electronic form or it is stated in the Software description. 
+
+## 2. License Grant
+2.1. Licensor hereby grants Licensee a License to use the Software as follows.
+
+2.1. **Purpose:** Licensee may use the Software for the purpose of:
+
+- Running the Software on Licensee’s Website, Server or Application;
+- Allowing 3rd Parties to run Software on Licensee’s Website, Server or Application;
+- Publishing Software’s output to Licensee and 3rd Parties;
+- Modifying the source code of the Software to suit Licensee’s needs and specifications, by himself or 3rd Parties, if source code is provided;
+- Making one back-up copy of the Software for archival purposes.
+
+2.2.  **Licensee may not:**  sell, redistribute, assign, encumber, give, lend, rent, lease, sublicense, publish, distribute or otherwise transfer the Software, or any portions of the Software, to another individual or entity, as a part of a larger work or solely.  The Licensee also may not reverse-engineer, decompile, disassemble, modify, translate, make any attempt to discover the source code, if the source code is not provided.
+
+2.3. **Non-Assignable & Non-Transferable:** Licensee may not assign or transfer his rights and duties under this License.
+
+2.4. **Commercial, Royalty Free: ** Licensee may use the Software without any royalties for own commercial purposes. Licensee may run one instance of the Software on the Testing, Stage and Production environment respectively, as long as all these environments are used for one project and/or one application.
+
+2.5. **No Right to Create Derivative Works: ** Licensee may not create derivative works based on the Software.
+
+2.6. **Maintenance & support:** Licensor may provide Licensee paid support and maintenance within a certain Support Package.
+
+## 3. Term & Termination
+3.1. This License is perpetual.
+
+3.2. Licensor may terminate this Agreement and Licensee's right and license to use the Software,  if Licensee fails to comply with the terms and conditions of this Agreement.
+
+3.3. Licensee may terminate this Agreement at any time by notifying Licensor. Upon the termination of this Agreement, Licensee must discontinue use of Software, and delete all copies of the Software.
+
+## 4. Payment
+4.1. In consideration of the License granted under clause 2, Licensee shall pay Licensor a license fee. Failure to perform payment shall construe as material breach of this Agreement.
+
+4.2. The Licensor reserves the ownership of the Software delivered to the Licensee until full payment of all existing or future claims arising from this contractual relationship at the time of delivery.
+
+## 5. Support
+5.1. The Licensee may sign with the Licensor the Software Maintenance and Support Agreement (SMSA) for a specific support package.
+
+5.2. Together with the Software, the Licensee will receive a free Basic Support for a period of 3 months.
+
+5.3. Each subsequent Support term will start on the day following expiration of the previous Support term regardless of the renewal date of the SMSA. 
+
+5.4. If Licensee elects not to renew the SMSA, Licensee would retain perpetual right to continue using the most recent version of the Software released by Licensor during applicable Support term, in accordance with Conditions and Terms of this License.
+
+5.5. Without a valid Support Package no support is provided.
+
+5.6. All maintenance and support services are subject to the terms of the SMSA.
+
+## 6. Additional Services
+
+6.1. All services provided by the Licensor that are not considered as part of maintenance or support, but are directly related to the supported software, such as: trainings, consulting, custom programming, implementation of proposed solutions, on-site support, and support beyond the scope of the support package or the prescribed hourly quota are referred to as additional services.
+
+6.2. The General Terms and Conditions of the Licensor apply to these services.
+
+## 7. Defect Claims
+
+7.1. **Immediate Examination:** the Licensee will examine the delivered software including documentation within 10 business days of delivery, especially with regard to the functionality of basic program features. Defects found or identifiable must be notified to Licensor in writing within 10 working days. 
+
+7.1.1. If no defects are reported in writing during the 10 working days after delivery, it is stated that:
+
+- Liсensee has inspected the Software thoroughly and found it satisfactory and adequate to his needs, 
+- it does not interfere with his regular operation, 
+- it meets the standards and scope of his computer systems and architecture, 
+- Licensee has found that the Software does not infringe any of End User License Agreement of any software Licensee may use in performing his services. 
+
+7.1.2. Upon expiration of this period, Licensee hereby waives any claims for incompatibility, performance, results and features of the Software.
+
+7.2. Defects that cannot be identified within the scope of the proper examination described above must be notified within 10 working days of discovery, in compliance with the requirements of the claim.
+
+7.3. Defects shall be proven by means of a comprehensible description of the error symptoms, as far as possible, by written or electronic records, video recordings, screenshots or other illustrative documents in writing or electronically in a form prescribed by TL. The notice or description of defect made by client shall allow the reproduction of the defect.
+
+7.4. Defects of the supplied software are remedied by the Licensor in accordance with the statutory provisions. This is done by the option of the Licensor to improve or redeliver the Software. The Licensor is entitled to at least two attempts of improvement.
+
+7.5. If the Licensor has found out after notification of a defect that there is no defect, all costs incurred  shall be borne in full by the Licensee. The cost calculation is based on the usual hourly rate of the Licensor.
+
+7.6. Defects resulting from the use of third-party programming, which conflicts with existing programming or integration with third-party software must be fully resolved at the expense of the Licensee. 
+
+7.7. The warranty period is 12 months from delivery of the Software.
+
+7.8. Otherwise, the Software is provided to Licensee **"AS IS"** and without any further warranties. Licensor makes no warranty as to its use or performance. To the maximum extent permitted by applicable law, Licensor, and its affiliates, suppliers and resellers, disclaim all other warranties and conditions, either expressed or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement, with regard to software, and the provision of or failure to provide support services.
+
+## 8. Updates
+8.1. Hotfixes, patches, updates, and upgrades (Updates) are provided for free only during the first 12 months after purchase.
+
+8.2. Without a valid SMSA, Updates can be purchased from the 2nd year for another year, with a 50% discount on the current purchase price, provided that the Updates are being purchased continuously in previous periods.
+
+8.3. If the Licensee has a valid SMSA, the Updates may be purchased from the second year for another year with a 75% discount on the current purchase price, provided that the Updates are being purchased continuously in previous periods.
+
+8.4. Installation and configuration services will be charged additionally.
+
+## 9. Limited Liability
+9.1. To the maximum extent permitted by applicable law, in no event will Licensor or its affiliates, licensors, suppliers or resellers be liable to Licensee under any theory for any damages suffered by Licensee or any user of the Software, or for any special, incidental, indirect, consequential, or similar damages, including, but not limited to, damages for loss of profits or confidential or other information, for business interruption, for personal injury, for loss of privacy, for failure to meet any duty including of good faith or of reasonable care, for negligence, and for any other pecuniary or other loss whatsoever, arising out of the use or inability to use software, or the provision of or failure to provide support services, even if Licensor has been advised of the possibility of such damages, and regardless of the legal or equitable theory upon which the claim is based.
+
+9.2. The limitation of liability does not apply as soon as the Licensor has caused the damage intentionally or through gross negligence.
+
+9.3. In any case, Licensor's entire liability under any provision of this Agreement will be limited to the amount actually paid by Licensee for software under this Agreement.
+
+9.4. The Licensee is responsible for the fact that a data backup is operated in a suitable form and a timely and economically sound recovery of lost data is ensured.
+
+## 10. Rights of Third Parties
+10.1. The software delivered by the Licensor is free from the rights of third parties, which are contrary to a contractual use. If the deficiencies persist, the Licensor shall be entitled to remedy the infringement of the rights of third parties by means of legal measures, or to alter or replace the services in such a way that third-party rights are no longer infringed, provided that the functionality of the services is impaired.
+
+## 11. No Refunds
+11.1.  Accordingly, as the Software is intangible good, Licensee shall not be ever entitled to any refund, rebate, compensation or restitution for any reason whatsoever, even if the Software contains material flaws.
+
+## 12. Software Evaluation
+12.1. Licensee may obtain from Licensor a free copy of the Software to evaluate it for a period of thirty (30) days, unless otherwise specified by Licensor ("Evaluation Period").
+
+12.2. Licensee's use of Software during Evaluation Period shall be subject to the terms of this Agreement but shall be limited to the internal Software evaluation for the sole purpose of determining whether Software meets Licensee's requirements and whether Licensee desires to use the Software.
+
+12.3. For the Evaluation Period the Software is always provided in executable form as object code, source code is not provided.
+
+12.4. Upon expiration of Evaluation Period, Licensee may not use the Software and shall uninstall it.
+
+## 13. Indemnification
+13.1. Licensee hereby warrants to hold Licensor harmless and indemnify Licensor for any lawsuit brought against it in regard to Licensee’s use of the Software in means that violate, breach or otherwise circumvent this license, Licensor's intellectual property rights or Licensor's title in the Software. 
+
+13.2. Licensee hereby agrees not to initiate and not to participate in lawsuits against Licensor in relation to this License and to compensate Licensor for any legal fees, cost or attorney fees should any claim brought by Licensee against Licensor be denied, in part or in full.
+
+## 14. Final Clauses
+14.1. Licensor reserves the right at any time to cease the support of the Software and to alter prices, features, specifications, capabilities, functions, licensing terms, release dates, general availability or other characteristics of the Software.
+
+14.2. Licensee agrees to be identified as a customer of Licensor and agrees that Licensor may refer to Licensee by name, trade name or trademark, if applicable, and may briefly describe Licensee's business in Licensor's marketing materials and on Licensor's web site. 
+
+14.3. This Agreement, including the Third-Party Agreements, constitutes the entire agreement between the parties concerning Licensee's use of the Software, and supersedes any and all prior or contemporaneous oral or written communications or advertising with respect to the Software, unless otherwise is signed by Licensee and Licensor.
+
+14.4. This Agreement will be governed by the laws of Germany, without reference to conflict of law principles. Licensee agrees that any litigation relating to this Agreement may only be brought in and shall be subject to the jurisdiction of any Court of Germany.
+
+14.5. If any provision of this Agreement is held invalid, the remainder of this Agreement will continue in full force and effect. 
+
+14.6. In case the terms of this Agreement are in conflict with the terms of any agreement individually negotiated and agreed between Licensee and Licensor, the terms of the latter shall prevail.
