@@ -1,6 +1,6 @@
 {
     "fields": {
-        "hasActivities": "Aktivitäten",
-        "hasTasks": "Aufgaben"
+        "hasActivities": "hat Aktivitäten",
+        "hasTasks": "hat Aufgaben"
     }
 }
