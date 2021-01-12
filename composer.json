@@ -2,7 +2,7 @@
   "name": "atrocore/activities-tasks",
   "description": "ActivitiesTasks module",
   "require": {
-    "atrocore/core": "~1.0.0"
+    "atrocore/core": "~1.1.0"
   },
   "autoload": {
     "psr-4": {
