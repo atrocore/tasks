@@ -147,7 +147,7 @@ Espo.define('activitiestasks:views/meeting/fields/reminders', 'views/fields/base
 
         stringifySeconds: function (seconds) {
             if (!seconds) {
-                return this.translate('on time', 'labels', 'Meeting');
+                return this.translate('onTime', 'labels', 'Meeting');
             }
             var d = seconds;
             var days = Math.floor(d / (86400));

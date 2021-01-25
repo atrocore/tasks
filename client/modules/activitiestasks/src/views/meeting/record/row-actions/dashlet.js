@@ -47,7 +47,7 @@ Espo.define('activitiestasks:views/meeting/record/row-actions/dashlet', ['views/
             if (this.options.acl.edit && !~['Held', 'Not Held'].indexOf(this.model.get('status'))) {
                 actionList.push({
                     action: 'setHeld',
-                    label: 'Set Held',
+                    label: 'setHeld',
                     data: {
                         id: this.model.id,
                         scope: this.model.name
@@ -55,7 +55,7 @@ Espo.define('activitiestasks:views/meeting/record/row-actions/dashlet', ['views/
                 });
                 actionList.push({
                     action: 'setNotHeld',
-                    label: 'Set Not Held',
+                    label: 'setNotHeld',
                     data: {
                         id: this.model.id,
                         scope: this.model.name

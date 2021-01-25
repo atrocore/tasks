@@ -42,14 +42,14 @@ Espo.define('activitiestasks:views/call/record/row-actions/dashlet', ['views/rec
             if (this.options.acl.edit && !~['Held', 'Not Held'].indexOf(this.model.get('status'))) {
                 actionList.push({
                     action: 'setHeld',
-                    label: 'Set Held',
+                    label: 'setHeld',
                     data: {
                         id: this.model.id
                     }
                 });
                 actionList.push({
                     action: 'setNotHeld',
-                    label: 'Set Not Held',
+                    label: 'setNotHeld',
                     data: {
                         id: this.model.id
                     }

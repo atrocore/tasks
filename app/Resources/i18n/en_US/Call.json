@@ -42,8 +42,8 @@
   },
   "labels": {
     "Create Call": "Create Call",
-    "Set Held": "Set Held",
-    "Set Not Held": "Set Not Held",
+    "setHeld": "Set Held",
+    "setNotHeld": "Set Not Held",
     "Send Invitations": "Send Invitations"
   },
   "presetFilters": {

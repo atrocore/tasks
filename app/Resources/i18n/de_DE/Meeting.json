@@ -33,10 +33,10 @@
   },
   "labels": {
     "Create Meeting": "Meeting erstellen",
-    "Set Held": "Auf abgehalten setzen",
-    "Set Not Held": "Auf nicht abgehalten setzen",
-    "Send Invitations": "Einladungen versenden",
-    "on time": "Genaue Uhrzeit",
+    "setHeld": "Auf abgehalten setzen",
+    "setNotHeld": "Auf nicht abgehalten setzen",
+    "sendInvitations": "Einladungen versenden",
+    "onTime": "Genaue Uhrzeit",
     "before": "vorher"
   },
   "presetFilters": {
