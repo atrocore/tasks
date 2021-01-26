@@ -43,11 +43,11 @@ Espo.define('activitiestasks:views/call/record/detail', 'views/record/detail', f
             if (this.getAcl().checkModel(this.model, 'edit')) {
                 if (['Held', 'Not Held'].indexOf(this.model.get('status')) == -1) {
                     this.dropdownItemList.push({
-                        'label': 'Set Held',
+                        'label': 'setHeld',
                         'name': 'setHeld'
                     });
                     this.dropdownItemList.push({
-                        'label': 'Set Not Held',
+                        'label': 'setNotHeld',
                         'name': 'setNotHeld'
                     });
                 }

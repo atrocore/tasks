@@ -74,7 +74,7 @@ Espo.define('activitiestasks:views/meeting/detail', 'views/detail', function (De
             }
             if (show && this.getMetadata().get('clientDefs.Meeting.viewSendInvitations')) {
                 this.addMenuItem('buttons', {
-                    label: 'Send Invitations',
+                    label: 'sendInvitations',
                     action: 'sendInvitations',
                     acl: 'edit',
                 });

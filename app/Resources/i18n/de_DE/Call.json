@@ -38,7 +38,7 @@
   },
   "labels": {
     "Create Call": "Anruf erstellen",
-    "Set Held": "Auf durchgeführt setzen",
+    "setHeld": "Auf durchgeführt setzen",
     "Set Not Held": "Auf nicht durchgeführt setzen",
     "Send Invitations": "Einladungen versenden"
   },
