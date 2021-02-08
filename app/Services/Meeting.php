@@ -172,15 +172,6 @@ class Meeting extends \Espo\Services\Record
             }
         }
 
-        $leads = $entity->get('leadsStatus');
-        foreach ($leads as $lead) {
-            if ($lead->get('emailAddress') && !array_key_exists($lead->get('emailAddress'), $emailHash)) {
-                $invitationManager->sendInvitation($entity, $lead, 'leadsStatus');
-                $emailHash[$user->get('emailAddress')] = true;
-                $sentCount++;
-            }
-        }
-
         if (!$sentCount) {
             return false;
         }

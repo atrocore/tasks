@@ -100,10 +100,6 @@ Espo.define('activitiestasks:views/record/panels/history', 'activitiestasks:view
                         attributes.parentName = this.model.get('accountName');
                     }
                 }
-            } else if (this.model.name == 'Lead') {
-                attributes.parentType = 'Lead',
-                    attributes.parentId = this.model.id
-                attributes.parentName = this.model.get('name');
             }
 
             attributes.nameHash = {};

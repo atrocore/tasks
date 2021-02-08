@@ -128,13 +128,6 @@ class Task extends \Espo\Core\Repositories\Event
                     if ($this->getEntityManager()->getMetadata()->get($parentType, ['fields', 'contactId'])) {
                         $columnList[] = 'contactId';
                     }
-                    if ($parentType === 'Lead') {
-                        $columnList[] = 'status';
-                        $columnList[] = 'createdAccountId';
-                        $columnList[] = 'createdAccountName';
-                        $columnList[] = 'createdContactId';
-                        $columnList[] = 'createdContactName';
-                    }
                     $parent = $this->getEntityManager()->getRepository($parentType)->select($columnList)->get($parentId);
                 }
             }
@@ -148,24 +141,9 @@ class Task extends \Espo\Core\Repositories\Event
                 if ($parent->getEntityType() == 'Account') {
                     $accountId = $parent->id;
                     $accountName = $parent->get('name');
-                } else {
-                    if ($parent->getEntityType() == 'Lead') {
-                        if ($parent->get('status') == 'Converted') {
-                            if ($parent->get('createdAccountId')) {
-                                $accountId = $parent->get('createdAccountId');
-                                $accountName = $parent->get('createdAccountName');
-                            }
-                            if ($parent->get('createdContactId')) {
-                                $contactId = $parent->get('createdContactId');
-                                $contactName = $parent->get('createdContactName');
-                            }
-                        }
-                    } else {
-                        if ($parent->getEntityType() == 'Contact') {
-                            $contactId = $parent->id;
-                            $contactName = $parent->get('name');
-                        }
-                    }
+                } elseif ($parent->getEntityType() == 'Contact') {
+                    $contactId = $parent->id;
+                    $contactName = $parent->get('name');
                 }
 
                 if (!$accountId && $parent->get('accountId') && $parent->getRelationParam('account',

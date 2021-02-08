@@ -37,11 +37,6 @@
       "entity": "Task",
       "foreign": "parent",
       "layoutRelationshipsDisabled": true
-    },
-    "originalLead": {
-      "type": "hasOne",
-      "entity": "Lead",
-      "foreign": "createdAccount"
     }
   }
 }

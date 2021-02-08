@@ -94,7 +94,7 @@ class Activities extends \Espo\Core\Services\Base
 
     protected function isPerson($scope)
     {
-        return in_array($scope, ['Contact', 'Lead', 'User']) || $this->getMetadata()->get([
+        return in_array($scope, ['Contact', 'User']) || $this->getMetadata()->get([
                 'scopes',
                 $scope,
                 'type'
@@ -306,22 +306,8 @@ class Activities extends \Espo\Core\Services\Base
                 )
             );
         } else {
-            if ($scope == 'Lead' && $entity->get('createdAccountId')) {
-                $selectParams['whereClause'][] = array(
-                    'OR' => array(
-                        array(
-                            'parentId' => $id,
-                            'parentType' => 'Lead'
-                        ),
-                        array(
-                            'accountId' => $entity->get('createdAccountId')
-                        )
-                    )
-                );
-            } else {
-                $selectParams['whereClause']['parentId'] = $id;
-                $selectParams['whereClause']['parentType'] = $scope;
-            }
+            $selectParams['whereClause']['parentId'] = $id;
+            $selectParams['whereClause']['parentType'] = $scope;
         }
 
         $selectManager->applyAccess($selectParams);
@@ -333,9 +319,6 @@ class Activities extends \Espo\Core\Services\Base
             switch ($scope) {
                 case 'Contact':
                     $link = 'contacts';
-                    break;
-                case 'Lead':
-                    $link = 'leads';
                     break;
                 case 'User':
                     $link = 'users';
@@ -414,22 +397,8 @@ class Activities extends \Espo\Core\Services\Base
                 )
             );
         } else {
-            if ($scope == 'Lead' && $entity->get('createdAccountId')) {
-                $selectParams['whereClause'][] = array(
-                    'OR' => array(
-                        array(
-                            'parentId' => $id,
-                            'parentType' => 'Lead'
-                        ),
-                        array(
-                            'accountId' => $entity->get('createdAccountId')
-                        )
-                    )
-                );
-            } else {
-                $selectParams['whereClause']['parentId'] = $id;
-                $selectParams['whereClause']['parentType'] = $scope;
-            }
+            $selectParams['whereClause']['parentId'] = $id;
+            $selectParams['whereClause']['parentType'] = $scope;
         }
 
         $selectManager->applyAccess($selectParams);
@@ -441,9 +410,6 @@ class Activities extends \Espo\Core\Services\Base
             switch ($scope) {
                 case 'Contact':
                     $link = 'contacts';
-                    break;
-                case 'Lead':
-                    $link = 'leads';
                     break;
                 case 'User':
                     $link = 'users';
@@ -523,22 +489,8 @@ class Activities extends \Espo\Core\Services\Base
                 )
             );
         } else {
-            if ($scope == 'Lead' && $entity->get('createdAccountId')) {
-                $selectParams['whereClause'][] = array(
-                    'OR' => array(
-                        array(
-                            'parentId' => $id,
-                            'parentType' => 'Lead'
-                        ),
-                        array(
-                            'accountId' => $entity->get('createdAccountId')
-                        )
-                    )
-                );
-            } else {
-                $selectParams['whereClause']['parentId'] = $id;
-                $selectParams['whereClause']['parentType'] = $scope;
-            }
+            $selectParams['whereClause']['parentId'] = $id;
+            $selectParams['whereClause']['parentType'] = $scope;
         }
 
         $selectManager->applyAccess($selectParams);

@@ -66,9 +66,8 @@ Espo.define('activitiestasks:views/meeting/detail', 'views/detail', function (De
             if (show) {
                 var userIdList = this.model.getLinkMultipleIdList('users');
                 var contactIdList = this.model.getLinkMultipleIdList('contactsStatus');
-                var leadIdList = this.model.getLinkMultipleIdList('leadsStatus');
 
-                if (!contactIdList.length && !leadIdList.length && !userIdList.length) {
+                if (!contactIdList.length && !userIdList.length) {
                     show = false;
                 }
             }
