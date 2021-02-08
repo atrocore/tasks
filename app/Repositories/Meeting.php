@@ -55,11 +55,6 @@ class Meeting extends \Espo\Core\Repositories\Event
                     if ($this->getEntityManager()->getMetadata()->get($parentType, ['fields', 'accountId'])) {
                         $columnList[] = 'accountId';
                     }
-                    if ($parentType === 'Lead') {
-                        $columnList[] = 'status';
-                        $columnList[] = 'createdAccountId';
-                        $columnList[] = 'createdAccountName';
-                    }
                     $parent = $this->getEntityManager()->getRepository($parentType)->select($columnList)->get($parentId);
                 }
             }
@@ -70,15 +65,6 @@ class Meeting extends \Espo\Core\Repositories\Event
                 if ($parent->getEntityType() == 'Account') {
                     $accountId = $parent->id;
                     $accountName = $parent->get('name');
-                } else {
-                    if ($parent->getEntityType() == 'Lead') {
-                        if ($parent->get('status') == 'Converted') {
-                            if ($parent->get('createdAccountId')) {
-                                $accountId = $parent->get('createdAccountId');
-                                $accountName = $parent->get('createdAccountName');
-                            }
-                        }
-                    }
                 }
                 if (!$accountId && $parent->get('accountId') && $parent->getRelationParam('account',
                         'entity') == 'Account') {

@@ -69,8 +69,7 @@
       "type": "linkParent",
       "entityList": [
         "Account",
-        "Contact",
-        "Lead"
+        "Contact"
       ]
     },
     "account": {
@@ -92,33 +91,30 @@
         "=": {
           "leftJoins": [
             "users",
-            "contactsStatus",
-            "leadsStatus"
+            "contactsStatus"
           ],
-          "sql": "contactsStatusMiddle.status = {value} OR leadsStatusMiddle.status = {value} OR usersMiddle.status = {value}",
+          "sql": "contactsStatusMiddle.status = {value} OR usersMiddle.status = {value}",
           "distinct": true
         },
-        "<>": "call.id NOT IN (SELECT call_id FROM contact_call_status WHERE deleted = 0 AND status = {value}) AND call.id NOT IN (SELECT call_id FROM call_user WHERE deleted = 0 AND status = {value}) AND call.id NOT IN (SELECT call_id FROM lead_call_lead WHERE deleted = 0 AND status = {value})",
+        "<>": "call.id NOT IN (SELECT call_id FROM contact_call_status WHERE deleted = 0 AND status = {value}) AND call.id NOT IN (SELECT call_id FROM call_user WHERE deleted = 0 AND status = {value})",
         "IN": {
           "leftJoins": [
             "users",
-            "leadsStatus",
             "contactsStatus"
           ],
-          "sql": "contactsStatusMiddle.status IN {value} OR leadsStatusMiddle.status IN {value} OR usersMiddle.status IN {value}",
+          "sql": "contactsStatusMiddle.status IN {value} OR usersMiddle.status IN {value}",
           "distinct": true
         },
-        "NOT IN": "call.id NOT IN (SELECT call_id FROM contact_call_status WHERE deleted = 0 AND status IN {value}) AND call.id NOT IN (SELECT call_id FROM call_user WHERE deleted = 0 AND status IN {value}) AND call.id NOT IN (SELECT call_id FROM lead_call_lead WHERE deleted = 0 AND status IN {value})",
+        "NOT IN": "call.id NOT IN (SELECT call_id FROM contact_call_status WHERE deleted = 0 AND status IN {value}) AND call.id NOT IN (SELECT call_id FROM call_user WHERE deleted = 0 AND status IN {value})",
         "IS NULL": {
           "leftJoins": [
             "users",
-            "contactsStatus",
-            "leadsStatus"
+            "contactsStatus"
           ],
-          "sql": "contactsStatusMiddle.status IS NULL AND leadsStatusMiddle.status IS NULL AND usersMiddle.status IS NULL",
+          "sql": "contactsStatusMiddle.status IS NULL AND usersMiddle.status IS NULL",
           "distinct": true
         },
-        "IS NOT NULL": "call.id NOT IN (SELECT call_id FROM contact_call_status WHERE deleted = 0 AND status IS NULL) OR call.id NOT IN (SELECT call_id FROM call_user WHERE deleted = 0 AND status IS NULL) OR call.id NOT IN (SELECT call_id FROM lead_call_lead WHERE deleted = 0 AND status IS NULL)"
+        "IS NOT NULL": "call.id NOT IN (SELECT call_id FROM contact_call_status WHERE deleted = 0 AND status IS NULL) OR call.id NOT IN (SELECT call_id FROM call_user WHERE deleted = 0 AND status IS NULL)"
       },
       "view": "activitiestasks:views/meeting/fields/acceptance-status"
     },
@@ -137,16 +133,6 @@
       "layoutDetailDisabled": true,
       "layoutListDisabled": true,
       "view": "activitiestasks:views/meeting/fields/contacts",
-      "columns": {
-        "status": "acceptanceStatus"
-      },
-      "orderBy": "name"
-    },
-    "leadsStatus": {
-      "type": "linkMultiple",
-      "layoutDetailDisabled": true,
-      "layoutListDisabled": true,
-      "view": "activitiestasks:views/meeting/fields/attendees",
       "columns": {
         "status": "acceptanceStatus"
       },
@@ -224,24 +210,6 @@
       "relationName": "contactCallStatus",
       "type": "hasMany",
       "entity": "Contact",
-      "foreign": "callsStatus",
-      "additionalColumns": {
-        "status": {
-          "type": "varchar",
-          "len": "36",
-          "default": "None"
-        }
-      }
-    },
-    "leads": {
-      "type": "hasMany",
-      "entity": "Lead",
-      "foreign": "calls"
-    },
-    "leadsStatus": {
-      "relationName": "leadCallStatus",
-      "type": "hasMany",
-      "entity": "Lead",
       "foreign": "callsStatus",
       "additionalColumns": {
         "status": {

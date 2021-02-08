@@ -291,10 +291,6 @@ Espo.define('activitiestasks:views/record/panels/activities', ['views/record/pan
                             attributes.parentId = this.model.get('accountId');
                         attributes.parentName = this.model.get('accountName');
                     }
-                } else if (this.model.name == 'Lead') {
-                    attributes.parentType = 'Lead',
-                        attributes.parentId = this.model.id;
-                    attributes.parentName = this.model.get('name');
                 }
                 if (this.model.name != 'Account' && this.model.has('contactsIds')) {
                     attributes.contactsIds = this.model.get('contactsIds');
@@ -385,12 +381,8 @@ Espo.define('activitiestasks:views/record/panels/activities', ['views/record/pan
                         attributes.parentName = this.model.get('accountName');
                     }
                 }
-            } else if (this.model.name == 'Lead') {
-                attributes.parentType = 'Lead',
-                    attributes.parentId = this.model.id
-                attributes.parentName = this.model.get('name');
             }
-            if (~['Contact', 'Lead', 'Account'].indexOf(this.model.name) && this.model.get('emailAddress')) {
+            if (~['Contact', 'Account'].indexOf(this.model.name) && this.model.get('emailAddress')) {
                 attributes.nameHash = {};
                 attributes.nameHash[this.model.get('emailAddress')] = this.model.get('name');
             }
