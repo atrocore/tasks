@@ -31,6 +31,8 @@
  * and "AtroCore" word.
  */
 
+declare(strict_types=1);
+
 namespace ActivitiesTasks\Migrations;
 
 use Treo\Core\Migration\Base;
