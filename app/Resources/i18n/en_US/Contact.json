@@ -9,7 +9,6 @@
         "accountType": "Account Type",
         "doNotCall": "Do Not Call",
         "address": "Address",
-        "opportunityRole": "Opportunity Role",
         "accountRole": "Title",
         "description": "Description",
         "campaign": "Campaign",
@@ -23,8 +22,6 @@
         "acceptanceStatusCalls": "Acceptance Status (Calls)"
     },
     "links": {
-        "opportunities": "Opportunities",
-        "cases": "Cases",
         "targetLists": "Target Lists",
         "campaignLogRecords": "Campaign Log",
         "campaign": "Campaign",
@@ -38,14 +35,6 @@
     },
     "labels": {
         "Create Contact": "Create Contact"
-    },
-    "options": {
-        "opportunityRole": {
-            "": "--None--",
-            "Decision Maker": "Decision Maker",
-            "Evaluator": "Evaluator",
-            "Influencer": "Influencer"
-        }
     },
     "presetFilters": {
         "portalUsers": "Portal Users",
