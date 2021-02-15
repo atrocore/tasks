@@ -9,7 +9,6 @@
     "accountType": "Firmentyp",
     "doNotCall": "Anrufe unerwünscht",
     "address": "Adresse",
-    "opportunityRole": "Verkaufschance Rolle",
     "description": "Beschreibung",
     "campaign": "Kampagne",
     "targetLists": "Kontaktlisten",
@@ -22,8 +21,6 @@
     "acceptanceStatusCalls": "Akzeptanzstatus (Anrufe)"
   },
   "links": {
-    "opportunities": "Verkaufschancen",
-    "cases": "Fälle",
     "targetLists": "Kontaktlisten",
     "campaignLogRecords": "Kampagnen Log",
     "campaign": "Kampagne",
@@ -37,14 +34,6 @@
   },
   "labels": {
     "Create Contact": "Kontakt erstellen"
-  },
-  "options": {
-    "opportunityRole": {
-      "": "--Kein(e)--",
-      "Decision Maker": "Entscheider",
-      "Evaluator": "Vorentscheider",
-      "Influencer": "Einflussreiche Person"
-    }
   },
   "presetFilters": {
     "portalUsers": "Portal Benutzer",
