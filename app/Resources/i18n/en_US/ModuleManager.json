@@ -1,6 +1,6 @@
 {
     "moduleNames": {
-        "ActivitiesTasks": "Activities&Tasks"
+        "ActivitiesTasks": "Tasks"
     },
     "moduleDescriptions": {
         "ActivitiesTasks": "Planning activities and tasks for TreoCRM entities"
