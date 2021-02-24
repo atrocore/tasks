@@ -58,12 +58,7 @@ class Event extends AbstractEvent
     /**
      * @var array
      */
-    protected $items
-        = [
-            "Task",
-            "Meeting",
-            "Call"
-        ];
+    protected $task = "Task";
 
     /**
      * @inheritdoc
@@ -94,7 +89,9 @@ class Event extends AbstractEvent
         $this->twoLevelTabList = $config->get('twoLevelTabList');
 
         // prepare TabList
-        $this->prepareTabList();
+        if (!in_array($this->task, $this->tabList)) {
+            $this->tabList[] = $this->task;
+        }
 
         // prepare twoLevelTabList
         $this->prepareTwoLevelTabList();
@@ -103,18 +100,6 @@ class Event extends AbstractEvent
         $config->set('tabList', $this->tabList);
         $config->set('twoLevelTabList', $this->twoLevelTabList);
         $config->save();
-    }
-
-    /**
-     * Prepare tab list
-     */
-    protected function prepareTabList(): void
-    {
-        foreach ($this->items as $v) {
-            if (!in_array($v, $this->tabList)) {
-                $this->tabList[] = $v;
-            }
-        }
     }
 
     /**
@@ -127,10 +112,8 @@ class Event extends AbstractEvent
 
         foreach ($this->twoLevelTabList as $k => $item) {
             if (!is_string($item) && $item->id == self::ACTIVITY_GROUP_ID) {
-                foreach ($this->items as $v) {
-                    if (!in_array($v, $item->items)) {
-                        $this->twoLevelTabList[$k]->items[] = $v;
-                    }
+                if (!in_array($this->task, $item->items)) {
+                    $this->twoLevelTabList[$k]->items[] = $this->task;
                 }
             }
         }

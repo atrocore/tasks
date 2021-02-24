@@ -45,7 +45,6 @@ class EntityManagerController extends AbstractListener
 {
 
     protected $params = [
-        'hasActivities',
         'hasTasks'
     ];
 

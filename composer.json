@@ -1,6 +1,6 @@
 {
   "name": "atrocore/activities-tasks",
-  "description": "ActivitiesTasks module",
+  "description": "Tasks module",
   "require": {
     "atrocore/core": "~1.1.17"
   },
@@ -12,10 +12,10 @@
   "extra": {
     "treoId": "ActivitiesTasks",
     "name": {
-      "default": "Activities and Tasks"
+      "default": "Tasks"
     },
     "description": {
-      "default": "The module enables planning and fulfillment of activities (meetings, calls, e-mails) and tasks for any entity in the system."
+      "default": "The module enables planning and fulfillment of tasks for any entity in the system."
     },
     "tags": [
       "manage",
