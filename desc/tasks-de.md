@@ -5,20 +5,20 @@ Dafür erstellt das Modul alle notwendigen Verknüpfungen zwischen den beteiligt
 ## Installationsanleitung
 
 - Um das Modul zu installieren, öffnen Sie in der Administration den Modulmanager und führen Sie die Installation durch.
-  ![Install Activites Module](_assets/install-activites-module.jpg)
-- Um das Modul zu deaktivieren, deaktivieren Sie die Checkbox "Is active".
+  ![Install Activites Module](_assets/installation.png)
+- Um das Modul zu aktualisieren, wählen Sie die Option "Update" aus dem Aktionsmenü des Moduls und klicken Sie anschließend auf den Knopf auf "Run Update".
 - Um das Modul zu deinstallieren, wählen Sie die Option "Remove" aus dem Aktionsmenü des Moduls.
 
 ## Administrator-Funktionen 
-- Nach der Installation des Moduls in den Einstellungen der einzelnen Entitäten können Sie einzelne Aktivitäten und Aufgaben aktivieren oder deaktivieren. Falls diese aktiviert sind, werden die Aktivitäten und Aufgaben inkl. der ganzen Historie in dem rechten Seitenpanel angezeigt.
+- Nach der Installation des Moduls in den Einstellungen der einzelnen Entitäten können Sie einzelne Aufgaben aktivieren oder deaktivieren. Falls diese aktiviert sind, werden die Aufgaben inkl. der ganzen Historie in dem rechten Seitenpanel angezeigt.
 
-- Um Aktivitäten und/oder Aufgaben in einer Entität zu aktivieren:
+- Um Aufgaben in einer Entität zu aktivieren:
 
 1. Öffnen Sie in der Administration den Entity Manager und gehen Sie zu den Einstellungen der Entität, in der die Aktivitäten zu aktivieren sind, indem Sie auf "Edit" klicken.
 
-2. Bei den Einstellungen setzen Sie die Checkbox bei den "Aktivitäten", wenn Sie die Blöcke für Verwaltung der Anrufe, Besprechungen und E-Mails aktivieren  möchten. Setzen Sie die Checkbox bei den Aufgaben, um die Verwaltung der mit der jeweiligen Entität verbundenen Aufgaben zu ermöglichen. 
+2. Bei den Einstellungen setzen Sie die Checkbox bei den Aufgaben, um die Verwaltung der mit der jeweiligen Entität verbundenen Aufgaben zu ermöglichen. 
 
-  ![Edit Entity Activities Active](_assets/edit-entity-activities-active.jpg)
+  ![Edit Entity Activities Active](_assets/edit-entity-task.jpg)
 
 #### Konfiguration der Zugriffsrechte für Benutzer
 
