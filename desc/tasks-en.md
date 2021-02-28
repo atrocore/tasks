@@ -5,20 +5,20 @@ In order to implement this, the module creates all necessary links between the p
 ## Installation Guide
 
 - In order to install the module, open the Module Manager in Administration and carry out the installation.
-![Install Activites Module](_assets/install-activites-module.jpg)
-- In order to deactivate the module, deactivate the checkbox "Is active".
+![Install Activites Module](_assets/installation.png)
+- In order to update the module, select the "Update" option from the module's action menu and then klick on the button "Run Update".
 - In order to uninstall the module, select the "Remove" option from the module's action menu.
 
 ## Administrator Guide 
-- After installing the module, you can enable or disable individual activities and tasks in the settings of the individual entities. If these are activated, the activities and tasks incl. the entire history are displayed in the right side panel. 
+- After installing the module, you can enable or disable tasks in the settings of the individual entities. If these are activated, the tasks incl. the entire history and are displayed in the right side panel. 
 
-In order to enable activities and / or tasks in an entity: 
+In order to enable tasks in an entity: 
 
 1. Open the Entity Manager in the Administration and go to the entity settings where activities are to be activated by clicking on "Edit".
 
-2. In the Settings section tick the checkbox "Activities" if you want to activate the call, meeting, and email management blocks. Tick the checkbox "Tasks" in order to be able to manage the tasks connected with the appropriate entity.
+2. In the Settings section tick the checkbox "Tasks" in order to be able to manage the tasks connected with the appropriate entity.
 
-![Edit Entity Activities Active](_assets/edit-entity-activities-active.jpg)
+![Edit Entity Activities Active](_assets/edit-entity-task.jpg)
 
 ### Configuration of Access Rights for Users
 
