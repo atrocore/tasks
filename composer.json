@@ -1,5 +1,5 @@
 {
-  "name": "atrocore/activities-tasks",
+  "name": "atrocore/tasks",
   "description": "Tasks module",
   "require": {
     "atrocore/core": "~1.1.17"
