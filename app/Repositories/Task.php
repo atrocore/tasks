@@ -35,11 +35,8 @@ namespace ActivitiesTasks\Repositories;
 
 use Espo\ORM\Entity;
 
-class Task extends \Espo\Core\Repositories\Event
+class Task extends \Espo\Core\ORM\Repositories\RDB
 {
-    protected $reminderDateAttribute = 'dateEnd';
-
-    protected $reminderSkippingStatusList = ['Completed', 'Canceled'];
 
     protected function init()
     {
