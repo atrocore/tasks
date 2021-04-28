@@ -48,3 +48,12 @@ It is also possible to view or edit the task in the main window, click on the bu
 The User can add a Dashlet for the Dashboard to see his own tasks. 
 
 ![Task Panel](_assets/tasks-widget.png)
+
+## Purchase Conditions
+The price does not include VAT. For the price stated above you will get the module including updates and upgrades for one year. After that, you may still use your last version of the module, or purchase the module again with a 50% discount, which gives you a right to updates and upgrades for an additional year. Furthermore, our EULA (End-User License Agreement) will apply.
+
+## Customization
+The module can be adapted to your needs, additional functions can be programmed, existing functions can be changed. Please contact us regarding this. Our GTC (General Terms and Conditions) apply.
+
+## Demo
+Please contact us, and we will send you the access data for the demo version.
