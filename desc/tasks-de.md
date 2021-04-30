@@ -47,3 +47,13 @@ Es ist möglich, die Aufgaben auch im Hauptfenster zu sehen oder editieren, daf�
 Der Benutzer kann ein Dashlet auf dem Dashboard hinzufügen, um eigene Aufgaben zu sehen.
 
 ![Task Panel](_assets/tasks-widget.png)
+
+## Kaufbedingungen
+
+Der Preis gilt zzgl. MwSt. Für den oben angegebenen Preis erhalten Sie das Modul einschließlich Updates und Upgrades für den Zeitraum eines Jahres. Nach dieser Zeit können Sie Ihre letzte Version des Moduls weiter verwenden oder das Modul mit einem Rabatt von 50% erneut erwerben, um das Recht zu bekommen, die Updates und Upgrades für ein weiteres Jahr zu erhalten. Im Übrigen gilt unser ELV (Endbenutzerlizenzvertrag). 
+
+## Anpassung
+Das Modul kann an Ihre Bedürfnisse angepasst werden – zusätzliche Funktionen können hinzu programmiert werden, vorhandene Funktionen können geändert werden. Bitte kontaktieren Sie uns diesbezüglich. Es gelten unsere AGB (Allgemeine Geschäftsbedingungen).
+
+## Demo
+Bitte kontaktieren Sie uns und wir senden Ihnen die Zugangsdaten für die Demoversion.
