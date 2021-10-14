@@ -57,3 +57,6 @@ Das Modul kann an Ihre Bedürfnisse angepasst werden – zusätzliche Funktionen
 
 ## Demo
 Bitte kontaktieren Sie uns und wir senden Ihnen die Zugangsdaten für die Demoversion.
+
+## Lizenz
+Dieses Modul wird unter der GNU GPLv3 [Lizenz](https://www.gnu.org/licenses/gpl-3.0.en.html) veröffentlicht.
