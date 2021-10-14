@@ -57,3 +57,6 @@ The module can be adapted to your needs, additional functions can be programmed,
 
 ## Demo
 Please contact us, and we will send you the access data for the demo version.
+
+## License
+This module is published under the GNU GPLv3 [license](https://www.gnu.org/licenses/gpl-3.0.en.html).
