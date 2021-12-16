@@ -11,13 +11,11 @@
     "account": "Firma",
     "dateCompleted": "Datum erledigt",
     "attachments": "Anhänge",
-    "reminders": "Erinnerungen",
-    "contact": "Kontakt"
+    "reminders": "Erinnerungen"
   },
   "links": {
     "attachments": "Anhänge",
-    "account": "Firma",
-    "contact": "Kontakt"
+    "account": "Firma"
   },
   "options": {
     "status": {

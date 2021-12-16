@@ -13,13 +13,11 @@
     "account": "Account",
     "dateCompleted": "Date Completed",
     "attachments": "Attachments",
-    "reminders": "Reminders",
-    "contact": "Contact"
+    "reminders": "Reminders"
   },
   "links": {
     "attachments": "Attachments",
-    "account": "Account",
-    "contact": "Contact"
+    "account": "Account"
   },
   "options": {
     "status": {

@@ -106,9 +106,7 @@ class Task extends \Espo\Core\ORM\Repositories\RDB
 
         if (!$entity->isNew() && $entity->isAttributeChanged('parentId')) {
             $entity->set('accountId', null);
-            $entity->set('contactId', null);
             $entity->set('accountName', null);
-            $entity->set('contactName', null);
         }
 
         $parentId = $entity->get('parentId');
@@ -122,42 +120,27 @@ class Task extends \Espo\Core\ORM\Repositories\RDB
                     if ($this->getEntityManager()->getMetadata()->get($parentType, ['fields', 'accountId'])) {
                         $columnList[] = 'accountId';
                     }
-                    if ($this->getEntityManager()->getMetadata()->get($parentType, ['fields', 'contactId'])) {
-                        $columnList[] = 'contactId';
-                    }
                     $parent = $this->getEntityManager()->getRepository($parentType)->select($columnList)->get($parentId);
                 }
             }
 
             $accountId = null;
-            $contactId = null;
             $accountName = null;
-            $contactName = null;
 
             if ($parent) {
                 if ($parent->getEntityType() == 'Account') {
                     $accountId = $parent->id;
                     $accountName = $parent->get('name');
-                } elseif ($parent->getEntityType() == 'Contact') {
-                    $contactId = $parent->id;
-                    $contactName = $parent->get('name');
                 }
 
                 if (!$accountId && $parent->get('accountId') && $parent->getRelationParam('account',
                         'entity') == 'Account') {
                     $accountId = $parent->get('accountId');
                 }
-                if (!$contactId && $parent->get('contactId') && $parent->getRelationParam('contact',
-                        'entity') == 'Contact') {
-                    $contactId = $parent->get('contactId');
-                }
             }
 
             $entity->set('accountId', $accountId);
             $entity->set('accountName', $accountName);
-
-            $entity->set('contactId', $contactId);
-            $entity->set('contactName', $contactName);
 
             if (
                 $entity->get('accountId')
@@ -170,20 +153,6 @@ class Task extends \Espo\Core\ORM\Repositories\RDB
                 ])->get($entity->get('accountId'));
                 if ($account) {
                     $entity->set('accountName', $account->get('name'));
-                }
-            }
-
-            if (
-                $entity->get('contactId')
-                &&
-                !$entity->get('contactName')
-            ) {
-                $contact = $this->getEntityManager()->getRepository('Contact')->select([
-                    'id',
-                    'name'
-                ])->get($entity->get('contactId'));
-                if ($contact) {
-                    $entity->set('contactName', $contact->get('name'));
                 }
             }
         }

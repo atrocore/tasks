@@ -67,15 +67,10 @@
     "parent": {
       "type": "linkParent",
       "entityList": [
-        "Account",
-        "Contact"
+        "Account"
       ]
     },
     "account": {
-      "type": "link",
-      "readOnly": true
-    },
-    "contact": {
       "type": "link",
       "readOnly": true
     },
@@ -134,10 +129,6 @@
     "account": {
       "type": "belongsTo",
       "entity": "Account"
-    },
-    "contact": {
-      "type": "belongsTo",
-      "entity": "Contact"
     }
   },
   "collection": {
