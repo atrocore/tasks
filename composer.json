@@ -15,7 +15,7 @@
       "default": "Tasks"
     },
     "description": {
-      "default": "The module enables planning and fulfillment of tasks for any entity in the system."
+      "default": "The module enables task planning and management for any entity in the system. Tasks have status, deadlines, be assigned to any user, and marked as executed."
     },
     "tags": [
       "manage",
