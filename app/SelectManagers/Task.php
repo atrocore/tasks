@@ -35,6 +35,8 @@ namespace ActivitiesTasks\SelectManagers;
 
 class Task extends \Espo\Core\SelectManagers\Base
 {
+    private $userTimeZone = null;
+
     protected function boolFilterActual(&$result)
     {
         $this->filterActual($result);
@@ -163,5 +165,19 @@ class Task extends \Espo\Core\SelectManagers\Base
 
         return $result;
     }
-}
 
+    public function getUserTimeZone()
+    {
+        if (empty($this->userTimeZone)) {
+            $preferences = $this->getEntityManager()->getEntity('Preferences', $this->getUser()->id);
+            if ($preferences) {
+                $timeZone = $preferences->get('timeZone');
+                $this->userTimeZone = $timeZone;
+            } else {
+                $this->userTimeZone = 'UTC';
+            }
+        }
+
+        return $this->userTimeZone;
+    }
+}

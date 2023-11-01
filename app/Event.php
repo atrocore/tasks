@@ -35,7 +35,7 @@ declare(strict_types=1);
 
 namespace ActivitiesTasks;
 
-use Treo\Core\ModuleManager\AbstractEvent;
+use Atro\Core\ModuleManager\AbstractEvent;
 
 /**
  * Class Event

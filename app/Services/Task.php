@@ -37,5 +37,4 @@ use Espo\Services\Record;
 
 class Task extends Record
 {
-
 }

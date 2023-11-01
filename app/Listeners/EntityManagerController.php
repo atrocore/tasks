@@ -35,42 +35,25 @@ declare(strict_types=1);
 
 namespace ActivitiesTasks\Listeners;
 
-use Treo\Listeners\AbstractListener;
-use Treo\Core\EventManager\Event;
+use Atro\Listeners\AbstractListener;
+use Atro\Core\EventManager\Event;
 
-/**
- * Class EntityManagerController
- */
 class EntityManagerController extends AbstractListener
 {
+    protected array $params = ['hasTasks'];
 
-    protected $params = [
-        'hasTasks'
-    ];
-
-    /**
-     * @param Event $event
-     */
     public function afterActionCreateEntity(Event $event)
     {
         $data = $event->getArgument('data');
         $this->setParams($data);
     }
 
-    /**
-     * @param Event $event
-     */
     public function beforeActionUpdateEntity(Event $event)
     {
         $data = $event->getArgument('data');
         $this->setParams($data);
     }
 
-    /**
-     * Set all $this->params in scope
-     *
-     * @param $data
-     */
     protected function setParams($data)
     {
         $scope = $data->name;
@@ -82,24 +65,11 @@ class EntityManagerController extends AbstractListener
         }
     }
 
-    /**
-     * Set param in metadata
-     *
-     * @param string $scope
-     * @param string $param
-     * @param bool $value
-     */
     protected function setValueOfParam(string $scope, string $param, bool $value): void
     {
-        //set value
         $data[$param] = $value;
 
-        $this
-            ->getContainer()
-            ->get('metadata')
-            ->set("scopes", $scope, $data);
-
-        // save
-        $this->getContainer()->get('metadata')->save();
+        $this->getMetadata()->set("scopes", $scope, $data);
+        $this->getMetadata()->save();
     }
 }

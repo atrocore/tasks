@@ -33,39 +33,23 @@
 
 declare(strict_types=1);
 
-
 namespace ActivitiesTasks\Listeners;
 
-use Treo\Core\EventManager\Event;
-use Treo\Listeners\AbstractListener;
+use Atro\Core\EventManager\Event;
+use Atro\Listeners\AbstractListener;
 
-/**
- * Class Metadata
- */
 class Metadata extends AbstractListener
 {
-    /**
-     * Modify
-     *
-     * @param Event $event
-     */
     public function modify(Event $event): void
     {
-        // get data
         $data = $event->getArgument('data');
 
-        // add dashlets
         $this->addDashlets($data);
-
-        // add tasks
         $this->addTasks($data);
 
         $event->setArgument('data', $data);
     }
 
-    /**
-     * @param array $data
-     */
     protected function addDashlets(array &$data): void
     {
         // add dashlets
@@ -77,11 +61,6 @@ class Metadata extends AbstractListener
         }
     }
 
-    /**
-     * Add tasks
-     *
-     * @param array $data
-     */
     protected function addTasks(array &$data): void
     {
         foreach ($data['entityDefs'] as $entity => $row) {
