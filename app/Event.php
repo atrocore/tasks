@@ -35,12 +35,12 @@ declare(strict_types=1);
 
 namespace ActivitiesTasks;
 
-use Atro\Core\ModuleManager\AbstractEvent;
+use Atro\Core\ModuleManager\AfterInstallAfterDelete;
 
 /**
  * Class Event
  */
-class Event extends AbstractEvent
+class Event extends AfterInstallAfterDelete
 {
     const ACTIVITY_GROUP_ID = '_delimiter_activity';
     const ACTIVITY_GROUP_NAME = 'Activity';
